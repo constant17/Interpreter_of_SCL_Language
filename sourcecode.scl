@@ -1,0 +1,35 @@
+import "scl.h"
+/* Program: sclminelement.scl
+   Computes the minimum value in an array.
+   Constant Pagoui 09-26-2020
+*/    
+symbol MM 45
+
+/*
+  This program computes the minimum value in an array
+*/
+  implementations
+
+  description
+      This is the main function of the application.
+      */
+  function main is
+    variables
+       define marray array [MAX] of type integer
+       define min_val of type integer
+       define kelements of type integer
+       define j of type integer
+       define mybhvar of type integer
+       define myihvar of type integer
+    begin
+      -- input "Number of elements to process: ", kelements      
+      for j = 0 to kelements -1 do
+         input "Enter element int value: " , marray [j] 
+		 if marray[j] < min_val
+			set min_val = marray[j]
+      endfor     
+      display "Min Integer found: ", min_val
+      exit
+  endfun main 
+  
+ 
