@@ -1,0 +1,52 @@
+Import Statement: import
+|	String literal: "scl.h"
+Function : main
+|	Define Statement: define
+|	|	Type: integer
+|	|	Identifier: sum_val
+|	Define Statement: define
+|	|	Type: integer
+|	|	Identifier: kelements
+|	Define Statement: define
+|	|	Type: integer
+|	|	Identifier: element
+|	Define Statement: define
+|	|	Type: integer
+|	|	Identifier: j
+|	Input Statement: input
+|	|	String literal: "Number of elements to process:" 
+|	|	Identifier: kelements
+|	While Statement:
+|	|	Condition:
+|	|	|	Relative operator: <=
+|	|	|	Expression 1:
+|	|	|		Identifier: j
+|	|	|	Expression 2:
+|	|	|		Identifier: kelements
+|	|	Block Code:
+|	|	|	Input Statement: input
+|	|	|	|	String literal: "Enter element int value: " 
+|	|	|	|	Identifier: element
+|	|	|	Set Statement: 
+|	|	|	|	Identifier: sum_val
+|	|	|	|	Operator: =
+|	|	|	|	Binary Expression:
+|	|	|	|	|	Expression 1:
+|	|	|	|	|	|	Identifier: sum_val
+|	|	|	|	|	Operator: +
+|	|	|	|	|	Expression 2:
+|	|	|	|	|	|	Identifier: element
+|	|	|	Set Statement: 
+|	|	|	|	Identifier: j
+|	|	|	|	Operator: =
+|	|	|	|	Binary Expression:
+|	|	|	|	|	Expression 1:
+|	|	|	|	|	|	Identifier: j
+|	|	|	|	|	Operator: +
+|	|	|	|	|	Expression 2:
+|	|	|	|	|	|	Literal Integer: 1
+
+|	Display Statement: display
+|	|	String literal: "The sum of the elements is: " 
+|	|	Identifier: sum_val
+endfunction main
